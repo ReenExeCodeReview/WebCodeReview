@@ -128,6 +128,19 @@ public function iHaveCookie($nameCookie)
 Дальше public методы
 Дальше protected и private 
 
+### Контроль версий
+В коммитах нужно размещать ссылку на задачу:
+Примеры:
+* Для GitHub это
+```
+Add PSR-1 & PSR-2 #1
+```
+* Для проектов с JIRA это название проекта и номер задачи
+```
+move to new framework (HD-15)
+```
+
+
 ##### Можно дополнительно глянуть:
 * [Right Qay](http://www.phptherightway.com/)
 * [Best Practices](https://phpbestpractices.org/)
