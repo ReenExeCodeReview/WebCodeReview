@@ -8,3 +8,18 @@
 * [CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (+ можно настроить для PHPStorm)
 * [Mess Detector](https://github.com/phpmd/phpmd) (+ можно настроить для PHPStorm)
 * [PHP-CS-Fixer] (https://github.com/FriendsOfPHP/PHP-CS-Fixer) (автоматизация приведения кода в нужный стиль, замена кавычек array() -> []) ([Пример замены в открытом проекте](https://github.com/ruflin/Elastica/pull/1141))
+
+
+
+### На стыке JS & HTML
+* Селекторы которые используем в JS лучше начинать с `js`
+* Данные правильно хранить в атрибутах `data-`
+
+##### Пример:
+```html
+    <ul id="js-basket-list">
+        <li class="js-basket-item" data-basket-id="17">
+            ...
+        </li>
+    <ul>
+```
