@@ -1,4 +1,5 @@
-## Код должен быть описан в одном стиле - так его будет проще читать.
+## Код нужно писать в одном стиле
+
 В PHP сообществе существует два стандарта оформления [PSR-1](http://www.php-fig.org/psr/psr-1/) и [PSR-2](http://www.php-fig.org/psr/psr-2/)
 
 Переводы на русский [PSR-1](http://svyatoslav.biz/misc/psr_translation/#_PSR-1) и [PSR-2](http://svyatoslav.biz/misc/psr_translation/#_PSR-2)
@@ -143,7 +144,6 @@ Add PSR-1 & PSR-2 #1
 ```
 move to new framework (HD-15)
 ```
-
 
 ### Можно дополнительно глянуть:
 * [Right Qay](http://www.phptherightway.com/)
