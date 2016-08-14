@@ -1,7 +1,6 @@
-# WebCodeReview
-
-### Код должен быть описан в одном стиле - так его будет проще читать.
+## Код должен быть описан в одном стиле - так его будет проще читать.
 В PHP сообществе существует два стандарта оформления [PSR-1](http://www.php-fig.org/psr/psr-1/) и [PSR-2](http://www.php-fig.org/psr/psr-2/)
+
 Переводы на русский [PSR-1](http://svyatoslav.biz/misc/psr_translation/#_PSR-1) и [PSR-2](http://svyatoslav.biz/misc/psr_translation/#_PSR-2)
 
 ##### Есть инструменты для проверки стандартов которые легко подключить в проект через [composer]
@@ -10,8 +9,7 @@
 * [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) (автоматизация приведения кода в нужный стиль, замена кавычек array() -> []) ([Пример замены в открытом проекте](https://github.com/ruflin/Elastica/pull/1141))
 
 
-
-### На стыке JS & HTML
+## На стыке JS & HTML
 * Селекторы которые используем в JS лучше начинать с `js`
 * Данные правильно хранить в атрибутах `data-` (HTML5)
 
@@ -24,9 +22,9 @@
     <ul>
 ```
 
-### Лучшие практики
+## Лучшие практики
 
-##### Явные
+### Явные
 **1 Операции фильтрации данных (иногда обработки) лучше делать на стороне БД**
 ```php
 $sql = <<<'SQL'
@@ -61,9 +59,10 @@ if (strtolower($requestAlias) === strtolower($storedAlias)) {
 }
 ```
 **3 Тонкий контроллер, толстая модель**
+
 Код нужно писать в сервисах или моделях, а контроллер уже использует их
 
-##### Плохие запахи
+### Плохие запахи
 **1 Запросы к БД в цикле**
 ```php
         $result = [];
@@ -128,7 +127,7 @@ public function iHaveCookie($nameCookie)
 Дальше public методы
 Дальше protected и private 
 
-### Контроль версий
+## Контроль версий
 В коммитах нужно размещать ссылку на задачу:
 Примеры:
 * Для GitHub это
@@ -141,7 +140,7 @@ move to new framework (HD-15)
 ```
 
 
-##### Можно дополнительно глянуть:
+### Можно дополнительно глянуть:
 * [Right Qay](http://www.phptherightway.com/)
 * [Best Practices](https://phpbestpractices.org/)
 * [Javascript Best Practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md)
