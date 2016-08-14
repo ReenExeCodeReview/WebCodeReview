@@ -27,7 +27,7 @@
 ### Лучшие практики
 
 ##### Явные
-1. Операции фильтрации данных (иногда обработки) лучше делать на стороне БД
+1 Операции фильтрации данных (иногда обработки) лучше делать на стороне БД
 ```php
 $sql = <<<'SQL'
     SELECT DISTINCT `status`
@@ -48,7 +48,7 @@ SQL;
 $list = array_unique(fetchAll($sql));
 ```
 
-2. Использование встроенных функций
+2 Использование встроенных функций
 ```php
 if (strcasecmp($requestAlias, $storedAlias) === 0) {
     ...
@@ -60,11 +60,11 @@ if (strtolower($requestAlias) === strtolower($storedAlias)) {
     ...
 }
 ```
-3. Тонкий контроллер, толстая модель
+3 Тонкий контроллер, толстая модель
 Код нужно писать в сервисах или моделях, а контроллер уже использует их
 
 ##### Плохие запахи
-1. Запросы в БД в цикле
+1 Запросы к БД в цикле
 ```php
         $result = [];
         foreach ($baskets as $basket) {
@@ -82,7 +82,7 @@ if (strtolower($requestAlias) === strtolower($storedAlias)) {
         $result = fetchProducts($productCodes);
 ```
 
-2. Лишние конструкции `else` | `elseif` | `else if`
+2 Лишние конструкции `else` | `elseif` | `else if`
 ```php
 public function iHaveCookie($nameCookie)
 {
@@ -106,7 +106,7 @@ public function iHaveCookie($nameCookie)
 ```
 В больших функциях - это ранее возвращение результата `early return`
 
-3. Перемешаны методы и свойства с разными областями видимости
+3 Перемешаны методы и свойства с разными областями видимости
 ```
     private function resolve()
     {
