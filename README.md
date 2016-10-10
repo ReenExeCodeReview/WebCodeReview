@@ -123,7 +123,38 @@ public function iHaveCookie($nameCookie)
         ...
     }
 
+    private $id;
 ```
+
+**4 Двойные проверки**
+```
+if (isset($variable) && $variable) {
+    ...
+}
+```
+правильнее заменить
+```
+if (!empty($variable)) {
+    ...
+}
+```
+
+**5 Проверки с двойным отрицанием**
+```php
+$variable = getSomeThing();
+if (!empty($variable)) {
+    ...
+}
+```
+правильнее заменить
+```php
+$variable = getSomeThing();
+if ($variable) {
+    ...
+}
+```
+(Приведение значений к "bool" прямое, через конструкции или функции)[http://php.net/manual/ru/types.comparisons.php]
+
 Все свойства и константы нужно объявлять сверху
 Дальше public методы
 Дальше protected и private
