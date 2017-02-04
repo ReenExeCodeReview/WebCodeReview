@@ -167,7 +167,7 @@ if ($variable) {
 ## Контроль версий
 В коммитах нужно размещать ссылку на задачу:
 Примеры:
-* Для GitHub это
+* Для GitHub это [Autolinked references and URLs](https://help.github.com/articles/autolinked-references-and-urls/)
 ```
 Add PSR-1 & PSR-2 #1
 ```
