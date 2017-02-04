@@ -153,7 +153,7 @@ if ($variable) {
     ...
 }
 ```
-(Приведение значений к "bool" прямое, через конструкции или функции)[http://php.net/manual/ru/types.comparisons.php]
+[Приведение значений к "bool" прямое, через конструкции или функции](http://php.net/manual/ru/types.comparisons.php)
 
 Все свойства и константы нужно объявлять сверху
 Дальше public методы
